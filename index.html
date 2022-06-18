@@ -14,22 +14,22 @@
 </head>
 <body>
     <div class="main">
-        <div class="header">
+        <div id="header" class="header">
             <ul class="navication">
                 <li class="navication__item">
                     <a href="" class="navication__link">HOME</a>
                 </li>
                 <li class="navication__item">
-                    <a href="#band" class="navication__link">BAND</a>
+                    <a href="#band" id ="tap" class="navication__link">BAND</a>
                 </li>
                 <li class="navication__item">
-                    <a href="#tour" class="navication__link">TOUR</a>
+                    <a href="#tour" id ="tapp" class="navication__link">TOUR</a>
                 </li>
                 <li class="navication__item">
-                    <a href="#contact" class="navication__link">CONTACT</a>
+                    <a href="#contact" id ="tappp" class="navication__link">CONTACT</a>
                 </li>
                 <li class="navication__item">
-                    <div href="" class="navication__link">MORE 
+                    <div  id ="tap" class="navication__link">MORE 
                             <i class="navication__link-icon fa-solid fa-caret-down"></i>
                     </div>
                 
@@ -46,8 +46,9 @@
                     </ul>
                 </li>
                
+                <i class="navication__icon fa-solid fa-magnifying-glass"></i>
+                <i id="menu" class="navication__list-icon fa-solid fa-bars"></i>
             </ul>
-            <i class="navication__icon fa-solid fa-magnifying-glass"></i>
 
         </div>
 
@@ -235,7 +236,7 @@
 
         <div class="footer">
             <div class="footer__icon">
-                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-facebook-square"></i>
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-linkedin-in"></i>
                 <i class="fa-brands fa-twitter"></i>
@@ -248,5 +249,42 @@
             
         </div>
     </div>
+    <script>
+        var header = document.getElementById('header');
+        // console.log(header)
+        var menu = document.getElementById('menu')
+        // console.log(menu)
+        var chieucao = header.clientHeight;
+        var tap = document.getElementById('tap')
+        var tapp = document.getElementById('tapp')
+        var tappp = document.getElementById('tappp')
+        
+        menu.onclick = function() {
+            var isclose = header.clientHeight === chieucao;
+            if(isclose) {
+                header.style.height = 'auto'
+            }
+            else {
+                header.style.height = 'var(--header-height)'
+
+            }
+           
+        }
+        tap.onclick = function () {
+            header.style.height = 'var(--header-height)'
+            
+
+        }
+        tapp.onclick = function () {
+            header.style.height = 'var(--header-height)'
+            
+
+        }
+        tappp.onclick = function () {
+            header.style.height = 'var(--header-height)'
+            
+
+        }
+    </script>
 </body>
 </html>

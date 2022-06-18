@@ -9,4 +9,20 @@
         width: 100%;
         margin-top: 10px;
     }
+    .navication {
+        display: block;
+
+    }
+    /* .header {
+        height: unset;
+    } */
+    .navication__icon {
+        display: none;
+    }
+    .navication__list-icon {
+        display: block;
+    }
+    .navication__item {
+        display: block;
+    }
 }
