@@ -25,4 +25,10 @@
     .navication__item {
         display: block;
     }
+    .location-item {
+        margin-bottom: 14px;
+    }
+    .header {
+        overflow: hidden;
+    }
 }

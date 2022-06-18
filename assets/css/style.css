@@ -33,7 +33,7 @@ html{
     width: 100%;
     z-index: 1;
     top: 0;
-    overflow: hidden;
+    /* overflow: hidden; không hiểu thêm cái này vào làm gì luôn á....Mới nhận ra là thêm cái này vào để dùng trên mobile*/
     
 
 
@@ -136,13 +136,14 @@ html{
 
 .slider{
     width: 100%;
-    margin-top: 46px;
+    margin-top: 40px;
     padding-top: 50%;
     background: url('https://www.w3schools.com/w3images/chicago.jpg') top center / cover no-repeat;
     position: relative;
     text-align: center;
     display: flex;
     justify-content: center;
+    
 }
 .slider-info {
     position: absolute;
