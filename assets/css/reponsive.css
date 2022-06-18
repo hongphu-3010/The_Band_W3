@@ -1,0 +1,12 @@
+@media (max-width: 739px) {
+    .slider-info {
+        display: none;
+    }
+    .contact__2input {
+        flex-direction: column;
+    }
+    .input-infor {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
